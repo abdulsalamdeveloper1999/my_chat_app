@@ -26,7 +26,7 @@ class ChatService extends ChangeNotifier {
     ids.sort();
     String chatRoomId = ids.join("_");
 
-    print('Sending message to chat room: $chatRoomId');
+    // print('Sending message to chat room: $chatRoomId');
 
     await _firestore
         .collection('chat_rooms')
@@ -36,7 +36,7 @@ class ChatService extends ChangeNotifier {
           newMessage.toMap(),
         );
 
-    print('Message sent.');
+    // print('Message sent.');
   }
 
   Stream<QuerySnapshot> getMessages(String userId, String otherUserId) {
@@ -44,7 +44,7 @@ class ChatService extends ChangeNotifier {
     ids.sort();
     String chatRoomId = ids.join("_");
 
-    print('Retrieving messages from chat room: $chatRoomId');
+    // print('Retrieving messages from chat room: $chatRoomId');
 
     return _firestore
         .collection('chat_rooms')

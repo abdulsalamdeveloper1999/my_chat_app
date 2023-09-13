@@ -64,7 +64,7 @@ class _ChatViewState extends State<ChatView> {
           return Center(child: Text('No messages available.'));
         } else {
           for (var doc in snapshot.data!.docs) {
-            print('Received message: ${doc.data()}');
+            // print('Received message: ${doc.data()}');
           }
           // Process and display the messages here
           return ListView(
