@@ -1,4 +1,4 @@
-# chat_app_with_bloc
+# chat_app_firestore_and_firebase
 
 A new Flutter project.
 
